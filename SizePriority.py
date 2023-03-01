@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 ##############################################################################
 ### NZBGET QUEUE SCRIPT                                                    ###
@@ -17,28 +17,28 @@
 ##############################################################################
 ### OPTIONS                                                                ###
 
-# VerySmallSize kleiner als in MB
+# VerySmallSize less than in MB
 VerySmallSize=100
 # Priority very high.
 PriorityVerySmall='100'
 
-# SmallSize kleiner als in MB
+# SmallSize less than in MB
 SmallSize=1024
 # Priority high.
 PrioritySmall='50'
 
-# Normal kleiner als in MB
-NormalSize=3000
+# Normal less than in MB
+NormalSize=3072
 # Priority normal.
 PriorityNormal='0'
 
-# BigSize kleiner als in MB
-BigSize=8000
+# BigSize less than in MB
+BigSize=8192
 # Priority low.
 PriorityBig='-50'
 
-# VeryBigSize kleiner als in MB
-VeryBigSize=16000
+# VeryBigSize less than in MB
+VeryBigSize=16384
 # Priority very low
 PriorityVeryBig='-100'
 
@@ -110,7 +110,7 @@ def checkSizeSetPriority(fileSize, nzb):
 # Script body
 def main():
         # Do start up check
-    print ('Hallo')
+    print ('Hello')
     start_check()
     sys.stdout.flush()
         
