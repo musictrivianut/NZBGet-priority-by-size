@@ -124,6 +124,9 @@ def main():
             if int(nzb['NZBID']) == int(os.environ.get('NZBNA_NZBID')):
                     break
     fileSize = nzb['FileSizeMB']
+    startingPriority = nzb['MaxPriority']
+    if startingPriority == 900:
+        sys.exit("Priority is already set to FORCE")
     print ('[DETAIL] Size of ' + nzb['NZBName'] + ' is %.2f MB' % fileSize)
 
     return checkSizeSetPriority(fileSize, nzb)
